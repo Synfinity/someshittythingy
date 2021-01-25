@@ -1,0 +1,297 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Synstuff = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local FirstTab = Instance.new("TextLabel")
+local Background = Instance.new("Frame")
+local Thing = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Walkspeed = Instance.new("TextButton")
+local SecondTab = Instance.new("TextLabel")
+local Background_2 = Instance.new("Frame")
+local Thing_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+
+--Properties:
+
+Synstuff.Name = "Synstuff"
+Synstuff.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Synstuff.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextButton.Parent = Synstuff
+TextButton.BackgroundColor3 = Color3.fromRGB(48, 52, 81)
+TextButton.BorderSizePixel = 4
+TextButton.Position = UDim2.new(0.780017555, 0, 0.155393064, 0)
+TextButton.Size = UDim2.new(0, 90, 0, 90)
+TextButton.Font = Enum.Font.Roboto
+TextButton.Text = "+"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+Frame.Parent = Synstuff
+Frame.BackgroundColor3 = Color3.fromRGB(48, 52, 81)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderSizePixel = 4
+Frame.Position = UDim2.new(0.3093777, 0, 0.320593923, 0)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel.BorderSizePixel = 4
+ImageLabel.Position = UDim2.new(0.358850926, 0, 0.183808908, 0)
+ImageLabel.Size = UDim2.new(0, 121, 0, 121)
+ImageLabel.Image = "rbxassetid://6296849244"
+ImageLabel.ImageTransparency = 1.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(0.269138187, 0, 0.620976031, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 60)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 50.000
+
+FirstTab.Name = "FirstTab"
+FirstTab.Parent = Synstuff
+FirstTab.BackgroundColor3 = Color3.fromRGB(48, 52, 81)
+FirstTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FirstTab.BorderSizePixel = 4
+FirstTab.Position = UDim2.new(0.0184049085, 0, 0.0292504579, 0)
+FirstTab.Size = UDim2.new(0, 200, 0, 50)
+FirstTab.Visible = false
+FirstTab.ZIndex = 11
+FirstTab.Font = Enum.Font.SourceSansLight
+FirstTab.Text = "1st Tab"
+FirstTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+FirstTab.TextScaled = true
+FirstTab.TextSize = 14.000
+FirstTab.TextWrapped = true
+
+Background.Name = "Background"
+Background.Parent = FirstTab
+Background.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+Background.Size = UDim2.new(0, 200, 0, 355)
+Background.ZIndex = -1
+
+Thing.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Thing.Rotation = -90
+Thing.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.85, 0.00), NumberSequenceKeypoint.new(0.86, 1.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+Thing.Name = "Thing"
+Thing.Parent = Background
+
+UICorner.Parent = Background
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Rotation = -90
+UIGradient.Parent = Background
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = FirstTab
+Walkspeed.BackgroundColor3 = Color3.fromRGB(92, 101, 156)
+Walkspeed.BorderColor3 = Color3.fromRGB(48, 52, 81)
+Walkspeed.BorderSizePixel = 4
+Walkspeed.Position = UDim2.new(0.0949999914, 0, 1.37999988, 0)
+Walkspeed.Size = UDim2.new(0, 161, 0, 58)
+Walkspeed.Font = Enum.Font.SourceSansLight
+Walkspeed.Text = "Walkspeed"
+Walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14.000
+Walkspeed.TextWrapped = true
+
+SecondTab.Name = "SecondTab"
+SecondTab.Parent = Synstuff
+SecondTab.BackgroundColor3 = Color3.fromRGB(48, 52, 81)
+SecondTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SecondTab.BorderSizePixel = 4
+SecondTab.Position = UDim2.new(0.218229622, 0, 0.0292504579, 0)
+SecondTab.Size = UDim2.new(0, 200, 0, 50)
+SecondTab.Visible = false
+SecondTab.ZIndex = 11
+SecondTab.Font = Enum.Font.SourceSansLight
+SecondTab.Text = "2nd Tab"
+SecondTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+SecondTab.TextScaled = true
+SecondTab.TextSize = 14.000
+SecondTab.TextWrapped = true
+
+Background_2.Name = "Background"
+Background_2.Parent = SecondTab
+Background_2.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+Background_2.Size = UDim2.new(0, 200, 0, 220)
+Background_2.ZIndex = -1
+
+Thing_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Thing_2.Rotation = -90
+Thing_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.75, 0.00), NumberSequenceKeypoint.new(0.76, 0.98), NumberSequenceKeypoint.new(1.00, 1.00)}
+Thing_2.Name = "Thing"
+Thing_2.Parent = Background_2
+
+UICorner_2.Parent = Background_2
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = Background_2
+
+-- Scripts:
+
+local function HQMY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local frame = script.Parent.Parent.Frame
+	local textlabel = script.Parent.Parent.Frame.TextLabel
+	local function openinglogotransparency(inorout)
+		if inorout == "in" then
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency - 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency - 0.1
+		wait(0.01)
+		elseif inorout == "out" then
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+			frame.ImageLabel.ImageTransparency = frame.ImageLabel.ImageTransparency + 0.1
+			frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+			textlabel.TextTransparency = textlabel.TextTransparency + 0.1
+			wait(0.01)
+		end
+	end
+	
+	local textlabel = script.Parent.Parent.Frame.TextLabel
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame:TweenSize(UDim2.new(0, 0, 0.37, 0), 'Out', 'Quint', '1')
+		script.Parent:TweenSize(UDim2.new(0, 0, 0, 90), 'Out', 'Back', '1')
+		script.Parent:TweenPosition(UDim2.new(1.3, 0, 0.155, 0), 'Out', 'Back', '3')
+		wait(1.5)
+		frame:TweenSize(UDim2.new(0.381, 0, 0.368, 0), 'Out', 'Back', '1')
+		wait(0.1)
+		openinglogotransparency("in")
+		wait(0.8)
+		frame.ImageLabel:TweenPosition(UDim2.new(0.370, 0, 0, 0), 'Out', 'Back', '1')
+		wait(0.1)
+		local Text = "SynHub: "..game.Players.LocalPlayer.Name
+		for i = 1,#Text do
+			textlabel.Text = string.sub(Text,1,i)
+			wait(0.1)
+		end
+		wait(2)
+		openinglogotransparency("out")
+		frame:TweenSize(UDim2.new(0, 0, 0, 0), 'Out', 'Quint', '1')
+		wait(1)
+		script.Parent.Parent.FirstTab.Visible = true
+		script.Parent.Parent.SecondTab.Visible = true
+	end)
+	
+end
+coroutine.wrap(HQMY_fake_script)()
+local function JVXGACD_fake_script() -- TextButton.Draggable (Read) 
+	local script = Instance.new('LocalScript', TextButton)
+
+	frame = script.Parent --Name of the frame you wanna move
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(JVXGACD_fake_script)()
+local function JWFHWMA_fake_script() -- Frame.Draggable (Read) 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent --Name of the frame you wanna move
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(JWFHWMA_fake_script)()
+local function AOQATL_fake_script() -- Walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', Walkspeed)
+
+	function onClicked()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+	end
+	script.Parent.MouseButton1Down:connect(onClicked)
+	
+end
+coroutine.wrap(AOQATL_fake_script)()
+local function YRVQZ_fake_script() -- FirstTab.Draggable (Read) 
+	local script = Instance.new('LocalScript', FirstTab)
+
+	frame = script.Parent --Name of the frame you wanna move
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(YRVQZ_fake_script)()
